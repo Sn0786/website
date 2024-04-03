@@ -1,0 +1,178 @@
+*{ box-sizing:border-box;}
+
+body{margin:0;}
+
+
+a {
+  text-decoration: none;
+}
+
+
+ul {
+  background-color: black;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+ 
+  
+}
+ 
+li {
+  color:  beige;
+  background:  black;
+  display:inline-block;
+  padding:15px 20px;
+  position: relative;
+  width: 8%;
+  text-decoration: none;
+  transition: 0.6s ease;
+}
+  
+li a {
+  color: beige;
+}
+
+li:hover {
+  background-color:rgb(44, 43, 43);
+  cursor: pointer;
+}
+
+a:hover{
+  color:rgba(222, 85, 30, 0.901) ;
+}
+
+ul li ul {
+  background: rgb(74, 73, 73);
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul, /* this is the line we add */
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+.title{
+  color:rgba(222, 85, 30, 0.901);
+  font-size: 70px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.TopTextImage{
+     margin:6%;
+}
+ 
+
+
+
+.FirstImage{
+    float:left; 
+    margin:15px;
+     width:40%; 
+     height:20%;
+}
+
+h1{
+     text-align:left;}  
+
+/* image gallery */
+.column{ 
+      float:left;
+      padding: 20px;
+      margin-left:250px;
+      
+     }
+
+.row::after{
+      content:"";
+      clear:both;
+      display:table;
+    
+}
+
+.gallery{
+    width:100%;
+    height: 264px;
+    
+    
+    
+}
+
+figure {
+  border: 1px solid black;
+  padding: 4px;
+  margin: 0.1px;
+  width:400px;
+  height: 300px;
+  
+}
+
+figcaption {
+  background-color: #525356;
+  color: rgb(245, 240, 235);
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+  font-size: 19px;
+}
+
+
+/* Iframe video */
+.holder{  
+   text-align:center;
+   width:100%;
+}
+
+iframe{
+    width:80%;
+    height:400px;
+}
+
+.column1{
+  background-color: #2f3031;
+  padding: 10px; 
+  height: 130px; 
+  width: 100%; 
+  margin: 0;
+}
+
+.row1::after{
+  display: flex;
+}  
+
+.p{
+  text-align: center;
+  color:beige;
+}
+
+@media only screen and (max-width: 600px) {
+  figure {
+      width: 150px;
+     
+      
+      
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+     li {
+        width: 100px;
+        padding:20px ;
+      }
+    }

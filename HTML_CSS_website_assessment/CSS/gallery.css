@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:#bfc1c3;
+    margin: 0;
+}
+
+h2{
+    color: bisque;
+    text-align: center;
+    font-size: 80px;
+    border-bottom: 2px solid  bisque; 
+    text-shadow: 1px 1px 2px rgb(136, 110, 110), 0 0 25px rgb(175, 231, 70), 0 0 5px rgb(207, 32, 134);
+}
+.mainDiv{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:15px; 
+    margin-top:30px;
+    contain:"";
+    clear: both;
+    display:table;
+}
+
+figure{
+    border-top: 20px solid rgb(93, 92, 91);
+    border-bottom: 20px solid rgb(93, 92, 91);
+    border-left: 20px solid rgb(163, 160, 158);
+    border-right: 20px solid rgb(163, 160, 158);
+    width:255px; 
+    float:left;
+    margin:10px; 
+    padding: 5px; 
+    background-color:lightgray;
+}
+
+figcaption{
+    text-align:bottom; 
+    width:198px; 
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+img{
+    float:right; 
+    width:204px; 
+    height:220px;
+}
+
+iframe{
+    width:820px;
+    height:345px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.column{
+    padding:10px; 
+    height:150px; 
+    width:100%; 
+    margin:0;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column1{
+    background-color:  #2f3031;
+    padding: 10px; 
+    height: 130px; 
+    width: 100%; 
+    margin: 0;
+}
+
+.row1::after{
+    display: flex;
+}  
+
+.p{
+    text-align: center;
+    color:beige;
+}
+
+.h1 a{
+    margin-left: 20px;
+    color: bisque;
+    text-shadow: 1px 1px 2px rgb(136, 110, 110), 0 0 25px rgb(175, 231, 70), 0 0 5px rgb(207, 32, 134);
+}
+
+.h1 a:hover{
+
+    font-size: 90px;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+      .h1 a:hover{
+      font-size: 50px;
+      
+    }
+  }

@@ -1,0 +1,170 @@
+*{ box-sizing:border-box;}
+
+body{
+   
+   margin:0;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+  
+  ul {
+    background-color: black;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+   
+    
+  }
+   
+  li {
+    color:  beige;
+    background:  black;
+    display:inline-block;
+    padding:15px 20px;
+    position: relative;
+    width: 8%;
+    text-decoration: none;
+    transition: 0.6s ease;
+  }
+    
+  li a {
+    color: beige;
+  }
+  
+  li:hover {
+    background-color:rgb(44, 43, 43);
+    cursor: pointer;
+  }
+  
+  a:hover{
+    color:rgba(222, 85, 30, 0.901) ;
+  }
+  
+  ul li ul {
+    background: rgb(74, 73, 73);
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li:focus-within > ul, /* this is the line we add */
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+.title  {
+  color:rgba(222, 85, 30, 0.901);
+  font-size: 70px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}  
+
+.mainDiv{
+    margin: 15%;
+    margin-top: 50px;
+}
+
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=file], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height:200px;
+  
+}
+  input[type=submit]:hover {
+    background-color: rgb(44, 43, 43);
+  }
+
+
+.column{
+    background-color:#2f3031;
+    padding: 10px; 
+    height: 130px; 
+    width: 100%; 
+    margin: 0;
+}
+  
+.row::after{
+    display: flex;
+}  
+  
+.p1{
+    text-align: center;
+    color:beige;
+    
+}
+  
+@media only screen and (max-width: 600px) {
+    .div22 {
+        width: 155px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .A4 {
+        width: 250px;
+    }
+}

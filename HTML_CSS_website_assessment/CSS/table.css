@@ -1,0 +1,46 @@
+ 
+body{
+    background-color: black;
+}
+table, th, td {
+   border: 1px solid rgb(245, 243, 243);
+   color: rgb(246, 244, 244);
+   border-collapse: collapse;
+ }
+ 
+ caption{
+     color:  rgb(232, 99, 42);
+     font-size: 30px;
+     margin-bottom: 1%;
+ }
+ 
+td:hover{
+     background-color: rgb(92, 90, 88);
+}
+ 
+th:hover{
+    background-color: rgb(92, 90, 88);
+}
+
+
+
+ div{
+    margin:10%; 
+    margin-top: 1%;
+ }
+table{
+    width: 100%;
+}
+
+td{
+    height:50px;
+    width:50px;
+}
+
+img{
+    width:100%;
+    
+    
+    
+}
+
